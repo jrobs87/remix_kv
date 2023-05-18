@@ -13,7 +13,11 @@ export const loader = async ({
   console.log(context, params)
 
 
-  return { context, params }
+  return {
+    loader: {
+      context, params
+  }
+}
 
   // return json(
   //   await context.GP_DATA_JR.get<{ name: string }>(`data`, {
