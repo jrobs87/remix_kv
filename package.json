@@ -4,8 +4,7 @@
   "scripts": {
     "build": "remix build",
     "dev:remix": "remix watch",
-    
-    "dev:wrangler": "cross-env NODE_ENV=development wrangler pages dev ./public --kv GP_DATA_JR",
+    "dev:wrangler": "cross-env NODE_ENV=development wrangler pages dev ./public --kv TEST",
     "dev": "npm-run-all build --parallel \"dev:*\"",
     "start": "cross-env NODE_ENV=production npm run wrangler",
     "typecheck": "tsc",
