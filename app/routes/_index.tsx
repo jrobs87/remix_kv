@@ -2,6 +2,10 @@ import type { LoaderArgs } from "@remix-run/cloudflare";
 import { json } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
 
+interface context {
+  GP_DATA_JR: KVNamespace
+}
+
 export const loader = async ({
   context,
   params,
@@ -9,12 +13,13 @@ export const loader = async ({
   console.log(context, params)
 
 
-  return { context, params }
-  // return json(
-  //   await get<{ name: string }>(`/faqs`, {
-  //     type: "json",
-  //   })
-  // );
+  // return { context, params }
+
+  return json(
+    await context.GP_DATA_JR.get<{ name: string }>(`data`, {
+      type: "json",
+    })
+  );
 };
 
 export default function Product() {

@@ -1,2 +1,6 @@
 compatibility_date = "2022-04-05"
 compatibility_flags = ["streams_enable_constructors"]
+
+kv_namespaces = [
+  { binding = "GP_DATA_JR", id = "09db6c29b23d4009968f7b4c38b311fa", preview_id = "09db6c29b23d4009968f7b4c38b311fa" }
+]
