@@ -8,7 +8,7 @@ export const loader = async ({
   params,
 }: LoaderArgs) => {
   
-  return await json(context.TEST.get(params.slug))
+  return json(await context.TEST.get(params.slug))
 };
 
 export default function Page() {
