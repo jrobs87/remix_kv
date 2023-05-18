@@ -24,7 +24,7 @@ export default function pages() {
         <br />
         {
           pages.keys.map((page: any) => {
-            return <Link to={`/pages/${page.name}`} key={page.name} style={{display: "block", padding: "1rem"}}>{page.name}</Link>
+            return <Link prefetch="render" to={`/pages/${page.name}`} key={page.name} style={{display: "block", padding: "1rem"}}>{page.name}</Link>
           })
         }
       </div>
