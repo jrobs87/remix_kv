@@ -9,7 +9,7 @@ export const loader = async ({
   params,
 }: LoaderArgs) => {
 
-  const data = json(await context.TEST.get(params.slug))
+  const data = json(await context.TEST.get(params.slug, {type: 'json'}))
   
   return data
 };
