@@ -9,8 +9,8 @@ export const loader = async ({
   params,
 }: LoaderArgs) => {
 
-  const data = json(await context.TEST.get(params.slug, {type: 'json'}))
-  
+  const data = json(await context.TEST.get(params.slug, { type: 'json' }))
+
   return data
 };
 
@@ -25,7 +25,8 @@ export default function Page() {
 
   return (
     <div>
-      <h1>{page.title}</h1>
+      <div><h1>{page.title}</h1></div>
+      <div><pre>{JSON.stringify(page, null, 2)}</pre></div>
     </div>
   );
 }

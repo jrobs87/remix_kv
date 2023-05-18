@@ -18,8 +18,8 @@ export default function pages() {
   if (!pages) throw new Response(null, { status: 404 })
 
   return (
-    <div>
-      <div>
+    <div style={{ display: "flex", padding: "2rem", gap: "1rem" }}>
+      <div style={{border: '1px dashed salmon', padding: '1rem', width: "30rem"}}>
         <h1>Pages</h1>
         <br />
         {
@@ -28,7 +28,7 @@ export default function pages() {
           })
         }
       </div>
-      <div>
+      <div style={{border: '1px dashed blue', padding: '1rem', width: '100%', overflowX: 'scroll'}}>
         <Outlet />
       </div>
     </div>
