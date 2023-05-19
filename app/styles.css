@@ -1,22 +1,33 @@
 * {
-    border-radius: 0.15rem;
+  box-sizing: border-box;
 }
 
 html {
-    background: #242423;
-    color: #e8eddf;
+    background: #2b2d42;
+    color: #edf2f4;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-    color: #e8eddf;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #d90429;
+
+}
+
+nav a {
+    color: #edf2f4;
     text-decoration: none;
+    font-weight: bold;
 }
 
-a.hover {
-    color: #f5cb5c;
+nav a:hover {
+    color: #2b2d42;
 }
 
-a.active {
-    color: #f5cb5c;
+nav a.active {
+    color: #2b2d42;
 }
