@@ -1,8 +1,6 @@
 import type { LoaderArgs } from "@remix-run/cloudflare";
 import { json } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
-import page from '../example.json'
-
 
 export const loader = async ({
   context,

@@ -11,7 +11,7 @@ export const loader = async ({
   return await context.TEST.list()
 };
 
-export default function pages() {
+export default function Pages() {
   const pages = useLoaderData<typeof loader>();
 
   console.log(pages)
@@ -27,7 +27,7 @@ export default function pages() {
           pages.keys.map((page: any) => {
             return (
               <NavLink prefetch="render" to={`/${page.name}`} key={page.name} style={{ display: "block", padding: "1rem" }}>
-                {page.name}
+                {page.metadata.title}
               </NavLink>
             )
           })
