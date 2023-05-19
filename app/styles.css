@@ -3,8 +3,8 @@
 }
 
 html {
-    background: #2b2d42;
-    color: #edf2f4;
+    background: #2d3142;
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -14,20 +14,20 @@ body {
 }
 
 nav {
-    background: #d90429;
+    background: #4f5d75;
 
 }
 
 nav a {
-    color: #edf2f4;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #2b2d42;
+    color: #ef8354;
 }
 
 nav a.active {
-    color: #2b2d42;
+    color: #ef8354;
 }

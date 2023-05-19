@@ -46,15 +46,12 @@ export default function App() {
           {
             pages.keys.map((page: any) => {
               return (
-                <NavLink prefetch="render" to={`/${page.name}`} key={page.name} style={{ display: "block", padding: "1rem 1rem 1rem 0" }}>
+                <NavLink prefetch="render" to={`/${page.name}`} key={page.name} style={{ display: "block", padding: "0rem 1rem 0rem 0" }}>
                   {page.metadata.title}
                 </NavLink>
               )
             })
           }
-          <a href="" style={{ display: "block", padding: "0rem 1rem 0rem 0" }}>Howdy</a>
-          <a href="" style={{ display: "block", padding: "0rem 1rem 0rem 0" }}>Howdy</a>
-          <a href="" style={{ display: "block", padding: "0rem 1rem 0rem 0" }}>Howdy</a>
         </nav>
         <Outlet />
         <ScrollRestoration />
