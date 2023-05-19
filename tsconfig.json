@@ -3,7 +3,7 @@
     "remix.env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "../pages.tsx"  ],
   "compilerOptions": {
     "lib": [
       "DOM",

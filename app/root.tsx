@@ -9,12 +9,30 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import styles from './styles.css'
+import type { LoaderArgs } from "@remix-run/cloudflare";
+import { json } from "@remix-run/cloudflare";
+import { useLoaderData, NavLink } from "@remix-run/react";
 
 export const links: LinksFunction = () => [
- { rel: "stylesheet", href: styles }
+  { rel: "stylesheet", href: styles }
 ];
 
+export const loader = async ({
+  context,
+  params,
+}: LoaderArgs) => {
+
+  // TODO - This needs to be properly typed.
+  return await context.TEST.list()
+};
+
 export default function App() {
+  const pages = useLoaderData<typeof loader>();
+
+  console.log(pages)
+
+  if (!pages) throw new Response(null, { status: 404 })
+
   return (
     <html lang="en">
       <head>
@@ -24,6 +42,17 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <nav style={{ padding: "2rem 1rem 0rem 1rem" }}>
+          {
+            pages.keys.map((page: any) => {
+              return (
+                <NavLink prefetch="render" to={`/${page.name}`} key={page.name} style={{ display: "block", padding: "1rem" }}>
+                  {page.metadata.title}
+                </NavLink>
+              )
+            })
+          }
+        </nav>
         <Outlet />
         <ScrollRestoration />
         <Scripts />

@@ -10,6 +10,7 @@ html {
 
 a {
     color: #e8eddf;
+    text-decoration: none;
 }
 
 a.hover {
