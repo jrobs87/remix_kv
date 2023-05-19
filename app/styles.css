@@ -21,7 +21,9 @@ main {
 
 nav {
     background: #1C3144;
-
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
 }
 
 nav a {
