@@ -22,7 +22,7 @@ export default function Page() {
   if (!page) throw new Response(null, { status: 404 })
 
   return (
-    <div>
+    <div style={{ padding: "2rem" }}>
       <div><h1>{page.title}</h1></div>
       <div><pre>{JSON.stringify(page, null, 2)}</pre></div>
     </div>
