@@ -42,11 +42,6 @@ nav.secondary {
     padding: 1rem 2rem;
 }
 
-/* nav.secondary a {
-    color: #14213d;
-    text-decoration: none;
-} */
-
 nav.secondary a:hover {
     color: inherit;
     text-decoration: underline;
