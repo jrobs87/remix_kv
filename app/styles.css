@@ -44,6 +44,10 @@ nav.secondary {
     padding: 1rem 2rem;
 }
 
+nav.secondary a {
+    color: #1C3144;
+}
+
 nav.secondary a:hover {
     color: inherit;
     text-decoration: underline;
