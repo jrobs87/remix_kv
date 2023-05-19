@@ -21,6 +21,7 @@ export default function pages() {
   return (
     <div style={{ display: "flex", padding: "2rem" }}>
       <h1>Hello</h1>
+      <Outlet />
     </div>
   );
 }
