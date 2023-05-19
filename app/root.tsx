@@ -46,6 +46,21 @@ export default function App() {
           <NavLink prefetch="render" to={`/`} style={{ display: "block", padding: "0rem 1rem 0rem 0" }}>
             Home
           </NavLink>
+          <NavLink prefetch="render" to={`/our-products`} style={{ display: "block", padding: "0rem 1rem 0rem 0" }}>
+            Our Products
+          </NavLink>
+          <NavLink prefetch="render" to={`/resource-center`} style={{ display: "block", padding: "0rem 1rem 0rem 0" }}>
+            Resource Center
+          </NavLink>
+          <NavLink prefetch="render" to={`/sustainability`} style={{ display: "block", padding: "0rem 1rem 0rem 0" }}>
+            Sustainability
+          </NavLink>
+          <NavLink prefetch="render" to={`/news`} style={{ display: "block", padding: "0rem 1rem 0rem 0" }}>
+            News
+          </NavLink>
+          <NavLink prefetch="render" to={`/where-to-buy`} style={{ display: "block", padding: "0rem 1rem 0rem 0" }}>
+            Where to Buy
+          </NavLink>
           {
             pages.keys.map((page: any) => {
               return (
