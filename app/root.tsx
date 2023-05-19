@@ -61,6 +61,9 @@ export default function App() {
           <NavLink prefetch="render" to={`/where-to-buy`} style={{ display: "block", padding: "0rem 1rem 0rem 0" }}>
             Where to Buy
           </NavLink>
+
+        </nav>
+        <nav className="secondary">
           {
             pages.keys.map((page: any) => {
               return (
@@ -70,11 +73,6 @@ export default function App() {
               )
             })
           }
-        </nav>
-        <nav className="secondary">
-          <NavLink prefetch="render" to={`/where-to-buy`}>
-            Where to Buy
-          </NavLink>
         </nav>
         <main>
           <Outlet />
