@@ -42,7 +42,10 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <nav style={{ padding: "2rem", display: "flex", flexWrap: "wrap"}}>
+        <nav style={{ padding: "2rem", display: "flex", flexWrap: "wrap" }}>
+          <NavLink prefetch="render" to={`/`} style={{ display: "block", padding: "0rem 1rem 0rem 0" }}>
+            Home
+          </NavLink>
           {
             pages.keys.map((page: any) => {
               return (
