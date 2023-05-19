@@ -26,7 +26,7 @@ export default function Pages() {
         {
           pages.keys.map((page: any) => {
             return (
-              <NavLink prefetch="render" to={`/${page.name}`} key={page.name} style={{ display: "block", padding: "1rem" }}>
+              <NavLink prefetch="render" to={`/pages/${page.name}`} key={page.name} style={{ display: "block", padding: "1rem" }}>
                 {page.metadata.title}
               </NavLink>
             )
