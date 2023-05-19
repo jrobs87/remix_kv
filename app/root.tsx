@@ -71,7 +71,14 @@ export default function App() {
             })
           }
         </nav>
-        <Outlet />
+        <nav className="secondary">
+          <NavLink prefetch="render" to={`/where-to-buy`}>
+            Where to Buy
+          </NavLink>
+        </nav>
+        <main>
+          <Outlet />
+        </main>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

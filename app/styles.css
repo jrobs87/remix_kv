@@ -3,8 +3,8 @@
 }
 
 html {
-    background: #2d3142;
-    color: #ffffff;
+    background: #ffffff;
+    color: #1C3144;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
@@ -14,8 +14,13 @@ body {
     padding: 0;
 }
 
+main {
+    padding: 2rem;
+    width: calc(100vw - 4rem);
+}
+
 nav {
-    background: #4f5d75;
+    background: #1C3144;
 
 }
 
@@ -25,9 +30,29 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffc300;
+    color: #FFBA08;
 }
 
 nav a.active {
-    color: #ffc300;
+    color: #FFBA08;
+}
+
+nav.secondary {
+    background: #A2AEBB;
+    padding: 1rem 2rem;
+}
+
+/* nav.secondary a {
+    color: #14213d;
+    text-decoration: none;
+} */
+
+nav.secondary a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+nav.secondary a.active {
+    color: inherit;
+    text-decoration: underline;
 }

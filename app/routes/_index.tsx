@@ -19,7 +19,7 @@ export default function pages() {
   if (!pages) throw new Response(null, { status: 404 })
 
   return (
-    <div style={{ display: "flex", padding: "2rem" }}>
+    <div>
       <h1>Hello</h1>
       <Outlet />
     </div>
